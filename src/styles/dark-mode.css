@@ -1,0 +1,17 @@
+/* Dark mode overrides */
+.dark {
+  --bg-primary: theme('colors.dark.900');
+  --bg-secondary: theme('colors.dark.800');
+  --text-primary: theme('colors.gray.100');
+  --text-secondary: theme('colors.gray.300');
+  --border-color: theme('colors.dark.700');
+}
+
+.dark .bg-gradient-primary {
+  background: linear-gradient(to bottom right, var(--bg-secondary), var(--bg-primary));
+}
+
+.dark .card-hover:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+}
